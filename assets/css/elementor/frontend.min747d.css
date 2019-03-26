@@ -3781,7 +3781,7 @@ body.elementor-page .elementor-widget-menu-anchor {
   top: 50%;
   display: block;
   width: 20px;
-  padding: 0;
+  padding: 20px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);

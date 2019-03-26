@@ -39,7 +39,7 @@
 }
 
 .elementor-13 .elementor-element.elementor-element-4e5e565 .slick-slide {
-  height: 800px;
+  height: 100%;
 }
 
 .elementor-13 .elementor-element.elementor-element-4e5e565 .slick-slide-bg {
@@ -135,10 +135,20 @@
     width: 66.769%;
   }
 }
+.elementor-slick-slider .slick-next:before, .elementor-slick-slider .slick-prev:before {
+  line-height: 0 !important;
+}
 
 
+.elementor-slick-slider .slick-prev
+{
+  left:-60px !important;
+}
+.elementor-slick-slider .slick-next
+{
+  right:-60px !important;
+}
 /* Start custom CSS for slides, class: .elementor-element-4e5e565 */
-
 .slick-prev:before,
 .slick-next:before {
   color: white !important;
@@ -148,8 +158,8 @@
 .slick-prev {
   background: #6f6b6c !important;
   border-radius: 50%;
-  padding: 18px 30px !important;
-  top: 45% !important;
+ 
+  top: 35% !important;
 }
 
 

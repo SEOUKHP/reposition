@@ -694,9 +694,9 @@
 .project-analysis-outer {
 	padding: 20px 15px 10px;
 }
-.purse-tried li {
-	width: 33.3%;
-}
+  .purse-tried li, .g-tried li {
+    width: 33.3%;
+  }
 .metric-report-inner-mg img {
 	margin: 70px 0 0 0;
 }
@@ -993,9 +993,9 @@ textarea.text-field {
 .our-clients {
 	margin: 0 0 40px 0;
 }
-.purse-tried li {
-	width: 50%;
-}
+  .purse-tried li, .g-tried li {
+    width: 50%;
+  }
 
 .purse-tried {
 	padding: 0 15px 0px;
@@ -1376,9 +1376,9 @@ textarea.text-field {
 	font-size: 18px;
 	margin:20px 0px 15px;
 }
-.purse-tried li {
-	width: 100%;
-}
+  .purse-tried li, .g-tried li {
+    width: 100%;
+  }
 .seo-campaigns h2 {
 	font-size: 26px;
 }
@@ -1557,9 +1557,10 @@ p.comment-form-url {
 .newyork-times.newyork-times02 {
 	padding: 0;
 }
-.purse-tried li {
-	width: 100%;
-}
+  .purse-tried li, .g-tried li {
+    width: 100% !important;
+  }
+  
 .purse-tried li a {
 	padding: 30px 0 0px;
 }

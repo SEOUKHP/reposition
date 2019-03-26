@@ -1079,24 +1079,32 @@ img.alignright,
 	padding-left: 15px;
 	position: static;
 	z-index: 99;
+ 
 }
-
-.genesis-nav-menu .sub-menu a {
-	background-color: #fff;
-	font-size: 14px;
-	font-size: 1.4rem;
-	position: relative;
-	word-wrap: break-word;
-}
+  
+  .genesis-nav-menu .sub-menu a {
+    background-color: #fff;
+    font-size: 14px;
+    font-size: 1.4rem;
+    position: relative;
+    word-wrap: break-word;
+  }
 
 .genesis-nav-menu .menu-item:focus,
 .genesis-nav-menu .menu-item:hover {
 	position: relative;
+  
 }
 
+  .genesis-nav-menu .menu-item-has-children:hover > .sub-menu {
+    display: initial;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+  }
 .genesis-nav-menu .menu-item:hover > .sub-menu {
-	left: auto;
-	opacity: 1;
+  left: auto;
+  opacity: 1;
+  margin-left: -18px;
 }
 
 /* Responsive Menu
@@ -4373,6 +4381,9 @@ h1, h2, h3, h4, h5, h6, p {
 .elementor-section.elementor-section-boxed > .elementor-container {
   max-width: 945px !important;
 }
+.elementor-section.elementor-section-boxed > .elementor-container2 {
+  max-width: 1205px !important;
+}
 
 #menu-main-menu {
   border-bottom: 1px solid #d2d1d1;
@@ -4543,7 +4554,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
   }
 
-  .positioning-content a {
+  .positioning-content a, .buttonr {
     border: 1px solid #3ec352 !important;
     background: #3ec352;
     padding: 15px 30px;
@@ -4558,7 +4569,22 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 20px 0 0 0;
   }
 
-    .positioning-content a:hover {
+.buttonr {
+  border: 1px solid #3ec352 !important;
+  background: #3ec352;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  width:440px;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+    .positioning-content a:hover, .buttonr:hover {
       background: #fff;
       color: #3ec352;
     }
@@ -5139,6 +5165,13 @@ h1, h2, h3, h4, h5, h6, p {
     float: left;
     width: 33%;
     text-align: center;
+  }
+
+  .g-tried li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-bottom:100px;
   }
 
     .purse-tried li a {
@@ -6544,11 +6577,19 @@ div.wpcf7-response-output {
   padding: 440px 0;
 }
 
+.dental-seo-title {
+  text-align: center;
+  padding: 140px 0;
+}
 
-  .about-us-title h1 {
+
+  .about-us-title h1, .dental-seo-title h1 {
     color: #fff;
     font-size: 48px;
   }
+.dental-seo-title h2, .dental-seo-title h3, .dental-seo-title h4, .dental-seo-title p {
+  color: #fff;
+}
 
 .blog-pagination {
   float: left;
@@ -6867,4 +6908,51 @@ div.wpcf7-response-output {
   .cookie-bar-bar .ctcc-inner {
     display: -webkit-inline-box;
   }
+}
+
+
+.sp-tfree-client-image .tfree-client-image {
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@media only screen and (min-width: 960px)
+{
+  .genesis-nav-menu .sub-menu {
+    width: 180px;
+  }
+  .genesis-responsive-menu .genesis-nav-menu .sub-menu, .genesis-responsive-menu .genesis-nav-menu .sub-menu a
+  {
+    width:180px;
+  }
+}
+.genesis-nav-menu .sub-menu a {
+  background: none !important;
+  border: none;
+  color: #fff !important;
+  padding: 13px 15px !important;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 400;
+  width: 180px;
+}
+
+.wp-paginate li {
+  display: inline;
+  list-style: none;
+}
+
+.blog-pagination li a {
+  color: #000 !important;
+}
+
+.tf{
+  font-size:35px
+}
+.ttf {
+  font-size: 23px
+}
+.f {
+  font-size: 15px
 }
